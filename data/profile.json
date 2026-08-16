@@ -1,0 +1,11 @@
+{
+  "name": "Abdallah Mohammed",
+  "tagline": "Flutter Developer",
+  "terminalUser": "user@cairo-university",
+  "aboutMe": {
+    "education": "Cairo University",
+    "major": "Computer Science",
+    "focus": "Clean Architecture & SOLID",
+    "status": "Ready to work"
+  }
+}

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdallah | Terminal Portfolio</title>
-    
+    <meta name="description" content="Abdallah Mohammed — Flutter Developer. Cairo University Computer Science graduate specialising in Clean Architecture and SOLID principles.">
+
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -29,7 +28,7 @@
             <aside class="sidebar">
                 <div class="sidebar-label">DIRECTORY</div>
                 <ul class="nav-links">
-                    <li class="nav-item active" data-target="home">
+                    <li class="nav-item" data-target="home">
                         <span class="icon">_></span> Home
                     </li>
                     <li class="nav-item" data-target="projects">
@@ -38,14 +37,19 @@
                     <li class="nav-item" data-target="skills">
                         <span class="icon">⚡</span> Skills
                     </li>
+                    <li class="nav-item" data-target="experience">
+                        <span class="icon">💼</span> Experience
+                    </li>
+                    <li class="nav-item" data-target="certifications">
+                        <span class="icon">🏆</span> Certifications
+                    </li>
                     <li class="nav-item" data-target="contact">
                         <span class="icon">📫</span> Contact
                     </li>
                 </ul>
             </aside>
 
-            <main class="content-wrapper" id="main-content">
-                </main>
+            <main class="content-wrapper" id="main-content"></main>
         </div>
 
         <div class="status-bar">
@@ -58,10 +62,12 @@
         </div>
     </div>
 
+    <!-- External libs (non-module, loaded before our module) -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-    
-    <script src="script.js"></script>
+
+    <!-- Main entry point as an ES module -->
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

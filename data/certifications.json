@@ -1,0 +1,9 @@
+[
+  {
+    "id": "example-cert",
+    "name": "Certification Name",
+    "issuer": "Issuing Organization",
+    "date": "2024",
+    "credential": null
+  }
+]

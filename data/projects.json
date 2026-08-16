@@ -1,0 +1,20 @@
+[
+  {
+    "id": "expenses-tracker",
+    "title": "Expenses Tracker",
+    "tech": ["Flutter", "Hive", "BLoC"],
+    "description": "Comprehensive finance app with custom budgeting and spending visualization.",
+    "runCommand": "./run_tracker.sh --offline-mode",
+    "github": null,
+    "demo": null
+  },
+  {
+    "id": "flash-chat",
+    "title": "Flash Chat",
+    "tech": ["Flutter", "Firebase", "Auth"],
+    "description": "Real-time messaging platform with secure cloud sync.",
+    "runCommand": "./start_server.py",
+    "github": null,
+    "demo": null
+  }
+]

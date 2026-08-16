@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Languages & Frameworks",
+    "items": ["Dart & Flutter (Expert)", "C++ (Competitive Programming)"]
+  },
+  {
+    "category": "State Management & Architecture",
+    "items": ["BLoC / Cubit", "Clean Architecture & SOLID"]
+  },
+  {
+    "category": "Backend & Cloud",
+    "items": ["Firebase Ecosystem", "REST API Integration"]
+  },
+  {
+    "category": "DevOps & Tools",
+    "items": ["Git & GitHub Actions", "Linux / Podman"]
+  }
+]

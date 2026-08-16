@@ -222,6 +222,12 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     line-height: 1.9;
 }
 .skill-check { color: var(--accent-green); margin-right: 6px; }
+
+/* Proficiency level colours */
+.lvl-expert       { color: var(--accent-green);  font-size: 0.78rem; }
+.lvl-proficient   { color: var(--accent-blue);   font-size: 0.78rem; }
+.lvl-intermediate { color: var(--accent-cmd);    font-size: 0.78rem; }
+.lvl-familiar     { color: var(--text-muted);    font-size: 0.78rem; }
 .process-exit {
     color: var(--text-muted);
     margin-top: 20px;

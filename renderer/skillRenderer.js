@@ -7,6 +7,25 @@
  * ============================================================
  */
 
+/** Maps a proficiency keyword to a CSS class. */
+const LEVEL_CLASS = {
+  Expert:       "lvl-expert",
+  Proficient:   "lvl-proficient",
+  Intermediate: "lvl-intermediate",
+  Familiar:     "lvl-familiar",
+};
+
+/**
+ * Wraps the "(Level)" suffix in a coloured span.
+ * e.g. "Flutter (Expert)" → 'Flutter <span class="lvl-expert">(Expert)</span>'
+ */
+function formatSkillItem(skill) {
+  return skill.replace(
+    /\((Expert|Proficient|Intermediate|Familiar)\)/,
+    (_, level) => `<span class="${LEVEL_CLASS[level]}">(${level})</span>`
+  );
+}
+
 /**
  * Renders a single skill category block.
  * @param {{ category: string, items: string[] }} cat
@@ -16,7 +35,7 @@ function renderCategory(cat) {
   const items = cat.items
     .map(
       (skill) =>
-        `<div class="skill-item"><span class="skill-check">✔</span> ${skill}</div>`
+        `<div class="skill-item"><span class="skill-check">✔</span> ${formatSkillItem(skill)}</div>`
     )
     .join("");
 

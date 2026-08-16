@@ -27,12 +27,12 @@ const [
   experience,
   certifications,
 ] = await Promise.all([
-  fetch("../data/profile.json").then((r) => r.json()),
-  fetch("../data/projects.json").then((r) => r.json()),
-  fetch("../data/skills.json").then((r) => r.json()),
-  fetch("../data/contact.json").then((r) => r.json()),
-  fetch("../data/experience.json").then((r) => r.json()),
-  fetch("../data/certifications.json").then((r) => r.json()),
+  fetch("data/profile.json").then((r) => r.json()),
+  fetch("data/projects.json").then((r) => r.json()),
+  fetch("data/skills.json").then((r) => r.json()),
+  fetch("data/contact.json").then((r) => r.json()),
+  fetch("data/experience.json").then((r) => r.json()),
+  fetch("data/certifications.json").then((r) => r.json()),
 ]);
 
 // ── Page map: name → render function ─────────────────────────

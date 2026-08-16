@@ -6,19 +6,19 @@
 
 function renderProjectCard(project) {
   const techBadges = project.tech.map((t) => `<span>${t}</span>`).join("");
-  // Store all tech tags as a comma-separated data attribute for filter logic
   const techData = project.tech.join(",");
 
-  const links = [
-    project.github
-      ? `<a class="proj-link" href="${project.github}" target="_blank" rel="noopener"><span class="link-icon">⎇</span> git clone</a>`
-      : "",
-    project.demo
-      ? `<a class="proj-link" href="${project.demo}" target="_blank" rel="noopener"><span class="link-icon">↗</span> open demo</a>`
-      : "",
-  ]
-    .filter(Boolean)
-    .join("");
+  const githubBtn = project.github
+    ? `<a class="proj-action-btn" href="${project.github}" target="_blank" rel="noopener">
+         <span class="action-icon">⎇</span> View on GitHub
+       </a>`
+    : `<span class="proj-no-link">⎇ Repository private</span>`;
+
+  const demoBtn = project.demo
+    ? `<a class="proj-action-btn proj-action-demo" href="${project.demo}" target="_blank" rel="noopener">
+         <span class="action-icon">↗</span> Live Demo
+       </a>`
+    : "";
 
   return `
     <div class="project-card" id="proj-${project.id}" data-tech="${techData}">
@@ -27,8 +27,10 @@ function renderProjectCard(project) {
         <div class="tech-stack">${techBadges}</div>
       </div>
       <p class="proj-desc">${project.description}</p>
-      <div class="run-command">$ ${project.runCommand}</div>
-      ${links ? `<div class="proj-links">${links}</div>` : ""}
+      <div class="proj-actions">
+        ${githubBtn}
+        ${demoBtn}
+      </div>
     </div>`;
 }
 
@@ -38,7 +40,6 @@ function renderProjectCard(project) {
  * @param {string} terminalUser
  */
 export function renderProjectsPage(projects, terminalUser) {
-  // Collect all unique tech tags across all projects
   const allTech = [...new Set(projects.flatMap((p) => p.tech))].sort();
 
   const filterBar = `

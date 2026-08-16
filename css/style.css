@@ -141,14 +141,44 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     border-radius: 4px;
     margin-left: 5px;
 }
-.run-command {
-    background: #111;
-    padding: 12px;
-    border-radius: 4px;
-    margin-top: 15px;
-    font-size: 0.9rem;
+/* Project action buttons */
+.proj-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.proj-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--accent-green);
     color: var(--accent-green);
+    text-decoration: none;
     font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+.proj-action-btn:hover {
+    background: var(--accent-green);
+    color: #111;
+    font-weight: 600;
+}
+.proj-action-demo {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+.proj-action-demo:hover {
+    background: var(--accent-blue);
+    color: #111;
+}
+.action-icon { font-style: normal; }
+.proj-no-link {
+    color: var(--text-muted);
+    font-size: 0.82rem;
 }
 
 /* Project links row */

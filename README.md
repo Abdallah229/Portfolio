@@ -47,9 +47,8 @@ Portfolio/
     "title": "My App",           // Display name on the card
     "tech": ["Flutter", "Hive"], // Tech badges (also used for tag filtering)
     "description": "What it does.",
-    "runCommand": "./run_app.sh",// Fake terminal command shown on the card
-    "github": "https://github.com/abdallah229/my-app", // null to hide
-    "demo": null                 // null to hide
+    "github": "https://github.com/abdallah229/my-app", // null to show "Repository private"
+    "demo": null                 // null to hide the Live Demo button
   }
 ]
 ```

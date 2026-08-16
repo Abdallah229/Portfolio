@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Window background -->
+  <rect width="32" height="32" rx="6" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+  <!-- Traffic-light dots -->
+  <circle cx="7"  cy="8" r="2.2" fill="#ff5f56"/>
+  <circle cx="13" cy="8" r="2.2" fill="#ffbd2e"/>
+  <circle cx="19" cy="8" r="2.2" fill="#27c93f"/>
+  <!-- Divider -->
+  <line x1="1" y1="13" x2="31" y2="13" stroke="#333" stroke-width="1"/>
+  <!-- Prompt: >_ -->
+  <text x="4" y="27" font-family="monospace" font-size="13" font-weight="bold" fill="#27c93f">&gt;_</text>
+</svg>

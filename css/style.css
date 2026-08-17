@@ -320,7 +320,7 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
 /* ── Certifications Grid ────────────────────────────────────── */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 20px;
     margin-top: 4px;
 }
@@ -343,7 +343,7 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     width: 100%;
     display: block;
     object-fit: cover;
-    max-height: 180px;
+    max-height: 240px;
     transition: opacity 0.2s, transform 0.2s;
 }
 .cert-img-link:hover .cert-image {

@@ -58,8 +58,8 @@
       const x    = i * FONT_SIZE;
       const y    = drops[i] * FONT_SIZE;
 
-      /* Head character: bright lime-green */
-      ctx.fillStyle = '#c8ffc8';
+      /* Head character: bright terminal-green (matches --accent-green: #27c93f) */
+      ctx.fillStyle = '#39ff6a';
       ctx.fillText(char, x, y);
 
       /* Occasional white flash at the very tip */

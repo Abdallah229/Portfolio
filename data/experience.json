@@ -1,15 +1,17 @@
 [
   {
-    "id": "example-internship",
-    "role": "Your Role Here",
-    "company": "Company Name",
-    "period": "Month Year – Present",
-    "location": "Cairo, Egypt",
-    "description": "Brief summary of your responsibilities and what you worked on.",
-    "highlights": [
-      "Key achievement or responsibility #1",
-      "Key achievement or responsibility #2"
-    ],
-    "tech": ["Flutter", "Dart"]
+    "id": "habitat-inc",
+    "role": "Software Engineer",
+    "company": "Habitat.inc",
+    "period": "January 2026 – April 2026",
+    "location": "Remote",
+    "description": "Desgining and implementing coding challenge tasks for AI evaluation",
+    "highlights": [],
+    "tech": [
+      "Python",
+      "Rust",
+      "Docker",
+      "Software Testing"
+    ]
   }
 ]

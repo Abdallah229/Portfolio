@@ -1,10 +1,10 @@
 [
   {
-    "id": "ecpc-2024",
-    "name": "ECPC 2024",
+    "id": "ecpc-2026",
+    "name": "ECPC 2026",
     "issuer": "Egyptian Collegiate Programming Contest",
-    "date": "2024",
-    "image": "assets/certs/ecpc-2024.jpg",
+    "date": "2026",
+    "image": "assets/certs/ecpc-2026.jpg",
     "credential": null
   }
 ]

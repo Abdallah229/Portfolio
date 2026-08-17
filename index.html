@@ -13,6 +13,9 @@
 </head>
 <body>
 
+    <!-- Matrix rain canvas — sits behind everything -->
+    <canvas id="matrix-bg"></canvas>
+
     <div class="crt-overlay"></div>
 
     <div class="terminal-container">
@@ -67,6 +70,9 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+    <!-- Matrix rain (plain script, not a module) -->
+    <script src="js/matrix.js"></script>
 
     <!-- Main entry point as an ES module -->
     <script type="module" src="js/main.js"></script>

@@ -1,9 +1,10 @@
 [
   {
-    "id": "example-cert",
-    "name": "Certification Name",
-    "issuer": "Issuing Organization",
+    "id": "ecpc-2024",
+    "name": "ECPC 2024",
+    "issuer": "Egyptian Collegiate Programming Contest",
     "date": "2024",
+    "image": "assets/certs/ecpc-2024.jpg",
     "credential": null
   }
 ]

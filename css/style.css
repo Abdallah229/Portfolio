@@ -328,7 +328,7 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     background: linear-gradient(135deg, #252526, #1e1e1e);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 28px 20px 20px;
+    overflow: hidden;
     text-align: center;
     transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
@@ -337,7 +337,22 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(79, 193, 255, 0.12);
 }
-.cert-badge  { font-size: 2.2rem; margin-bottom: 14px; }
+/* Thumbnail image */
+.cert-img-link { display: block; overflow: hidden; }
+.cert-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 180px;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.cert-img-link:hover .cert-image {
+    opacity: 0.88;
+    transform: scale(1.03);
+}
+/* Info section */
+.cert-info { padding: 16px 18px 20px; }
+.cert-badge  { font-size: 2.2rem; padding: 24px 0 12px; }
 .cert-name   { color: #dcdcaa; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; line-height: 1.4; }
 .cert-issuer { color: var(--accent-blue); font-size: 0.8rem; margin-bottom: 4px; }
 .cert-date   { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 12px; }

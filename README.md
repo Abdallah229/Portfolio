@@ -105,13 +105,17 @@ Portfolio/
 [
   {
     "id": "cert-slug",
-    "name": "Flutter Development Bootcamp",
-    "issuer": "Udemy / Angela Yu",
+    "name": "ECPC 2024",
+    "issuer": "Egyptian Collegiate Programming Contest",
     "date": "2024",
+    "image": "assets/certs/ecpc-2024.jpg",  // optional — drop image in assets/certs/
     "credential": "https://link-to-certificate"  // null to hide the link
   }
 ]
 ```
+
+> Place certificate image files in **`assets/certs/`**. Supported formats: JPG, PNG, WebP.
+> If `image` is omitted or `null`, a 🏆 emoji is shown instead.
 
 ---
 

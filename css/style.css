@@ -272,6 +272,15 @@ h1 { font-size: 2.8rem; color: var(--accent-green); margin-bottom: 5px; }
     font-weight: 600;
 }
 
+/* Category tab variant — slightly larger than tech-pill defaults */
+.category-tabs .filter-btn {
+    padding: 7px 22px;
+    font-size: 0.88rem;
+}
+.category-tabs .filter-btn.active {
+    font-weight: 700;
+}
+
 /* ── Experience Cards ───────────────────────────────────────── */
 .exp-list { display: flex; flex-direction: column; }
 .exp-card {

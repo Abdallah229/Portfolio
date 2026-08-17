@@ -56,7 +56,7 @@ const router = new Router({
   terminalUser: profile.terminalUser,
 });
 
-// ── Project tag filtering (delegated listener on the content area) ──
+// ── Project category filtering (delegated listener on the content area) ──
 contentEl.addEventListener("click", (e) => {
   const btn = e.target.closest(".filter-btn");
   if (!btn) return;
@@ -71,8 +71,7 @@ contentEl.addEventListener("click", (e) => {
     if (filter === "all") {
       card.style.display = "";
     } else {
-      const tech = card.dataset.tech.split(",");
-      card.style.display = tech.includes(filter) ? "" : "none";
+      card.style.display = card.dataset.category === filter ? "" : "none";
     }
   });
 });

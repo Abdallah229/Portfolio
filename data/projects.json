@@ -2,6 +2,7 @@
   {
     "id": "expenses-tracker",
     "title": "Expenses Tracker",
+    "category": "Mobile",
     "tech": ["Flutter", "Hive", "BLoC"],
     "description": "Comprehensive finance app with custom budgeting and spending visualization.",
     "github": null,
@@ -10,6 +11,7 @@
   {
     "id": "flash-chat",
     "title": "Flash Chat",
+    "category": "Mobile",
     "tech": ["Flutter", "Firebase", "Auth"],
     "description": "Real-time messaging platform with secure cloud sync.",
     "github": null,

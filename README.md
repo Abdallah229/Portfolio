@@ -45,7 +45,8 @@ Portfolio/
   {
     "id": "my-app",              // Unique slug (used as HTML element id)
     "title": "My App",           // Display name on the card
-    "tech": ["Flutter", "Hive"], // Tech badges (also used for tag filtering)
+    "category": "Mobile",        // Filter tab: "Mobile" | "Web Backend" | "Desktop" | "Competitive Programming"
+    "tech": ["Flutter", "Hive"], // Tech badges shown on the card
     "description": "What it does.",
     "github": "https://github.com/abdallah229/my-app", // null to show "Repository private"
     "demo": null                 // null to hide the Live Demo button
